@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgn"
+    android:orientation="vertical">
+
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill the Fields"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:textColor="#DD051F"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/links"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Max Link"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#2DFDFDFD"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/lines"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Total Line"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#2DFDFDFD"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/processed"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Processed"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#6CA5E18E"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/clock"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Completed"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#6CA5E18E"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/blocked"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Blocked"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#6CA5E18E"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+            <EditText
+                android:id="@+id/completed"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="25dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Busy"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#6CA5E18E"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/busy"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Clock Time Now"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textColorHint="#6DEC6D6D"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/bgn"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next Calls"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:textColor="#EC1414"
+            tools:ignore="HardcodedText" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/from"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:textColorHint="#2CFDFDFD"
+                android:hint="From"
+                android:inputType="number"
+                android:layout_marginRight="20dp"
+                android:textColor="#FDFDFD"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:layout_marginEnd="20dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/to"
+                android:textColorHint="#2DFDFDFD"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="To"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/length"
+                android:textColorHint="#2DFDFDFD"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="length"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:layout_marginStart="20dp"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/arrival"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:textColorHint="#2CFDFDFD"
+                android:hint="Arrival"
+                android:inputType="number"
+                android:layout_marginRight="20dp"
+                android:textColor="#FDFDFD"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:layout_marginEnd="20dp"
+                android:autofillHints="" />
+
+            <Button
+                android:id="@+id/btn_next_call"
+                android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/btn_insert"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Insert"
+                android:textAllCaps="false"
+                android:textColor="#981F32D5"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:background="@drawable/bgn"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call in progress"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:textColor="#EC1414"
+            tools:ignore="HardcodedText" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/From"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:textColorHint="#2CFDFDFD"
+                android:hint="From"
+                android:inputType="number"
+                android:layout_marginRight="20dp"
+                android:textColor="#FDFDFD"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:layout_marginEnd="20dp"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/To"
+                android:textColorHint="#2DFDFDFD"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="To"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:autofillHints="" />
+
+            <EditText
+                android:id="@+id/end"
+                android:textColorHint="#2DFDFDFD"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="End"
+                android:inputType="number"
+                android:textColor="#FDFDFD"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                android:layout_marginStart="20dp"
+                android:autofillHints="" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_call_in_prog"
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_insert"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="Insert"
+            android:textAllCaps="false"
+            android:textColor="#FDFDFD"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_alter"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:padding="10dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#C0FDFDFD"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+
+
+</LinearLayout>

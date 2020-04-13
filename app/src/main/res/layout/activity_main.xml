@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:onClick="onClick"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:padding="25dp"
+        android:onClick="onClick"
+        android:text="Telephone System"
+        android:textAlignment="center"
+        android:textColor="#245E05"
+        android:textColorLink="#E61010"
+        android:textSize="35sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/FCFS"
+        style="@android:style/Widget.Material.Light.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="220dp"
+        android:textSize="30sp"
+        android:background="@drawable/btn_shp"
+        android:focusableInTouchMode="true"
+        android:textAllCaps="false"
+        android:padding="20dp"
+        android:onClick="onClick"
+        android:text="Telephone System"
+        android:textColor="#196E1D"
+        tools:targetApi="lollipop"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/wel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center_horizontal"
+        android:padding="25dp"
+        android:onClick="onClick"
+        android:text="Developed\nBy\nZakaria Hossain"
+        android:textAlignment="center"
+        android:textColor="#8DB13C"
+        android:textColorLink="#E61010"
+        android:textSize="14sp"
+        tools:ignore="HardcodedText,SmallSp" />
+
+
+
+</LinearLayout>
