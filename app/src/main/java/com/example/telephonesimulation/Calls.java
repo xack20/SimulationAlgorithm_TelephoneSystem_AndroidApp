@@ -1,5 +1,6 @@
 package com.example.telephonesimulation;
 
+
 class Calls{
     private int to,from,arrival=0,end,length=0;
 
@@ -36,10 +37,6 @@ class Calls{
 
     int getEnd() {
         return end;
-    }
-
-    int getLength() {
-        return length;
     }
 
 

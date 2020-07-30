@@ -1,12 +1,14 @@
 package com.example.telephonesimulation;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -158,41 +160,40 @@ public class InputAct extends AppCompatActivity{
 
     void add(){
 
-        String ls = "";
+        StringBuilder ls = new StringBuilder();
 
 
-
-
-        ls+=link+"#"+rct+"#"+(cmplt+blck+bsy)+"#"+cmplt+"#"+blck+"#"+bsy;
+        ls.append(link).append("#").append(rct).append("#").append(cmplt + blck + bsy).append("#").append(cmplt).append("#").append(blck).append("#").append(bsy);
 
         //to_send.add(ls);   /// Middle
-        ls+=">";
+        ls.append(">");
 
 
-        if(ind < next_calls.size())ls+=(next_calls.get(ind).toString());   // right up
-        else ls+=(new Calls(0,0,0,0).toString());
+        if (ind < next_calls.size()) ls.append(next_calls.get(ind).toString());   // right up
+        else ls.append(new Calls(0, 0, 0, 0).toString());
 
 
-        ls+=">";
+        ls.append(">");
 
 
-        int[] mp = new int[line+1];
-        Arrays.fill(mp,0);
+        int[] mp = new int[line + 1];
+        Arrays.fill(mp, 0);
 
-        for(Calls a : call_in_prog){
-            mp[a.getFrom()]=1;
-            mp[a.getTo()]=1;
+        for (Calls a : call_in_prog) {
+            mp[a.getFrom()] = 1;
+            mp[a.getTo()] = 1;
         }
 
-        for(int i = 1 ; i <= line; i++)ls+=i+" ----- "+mp[i]+"#";
+        for (int i = 1; i <= line; i++) ls.append(i).append(" ----- ").append(mp[i]).append("#");
 
         //to_send.add(ls);  /// left
-        ls+=">";
+        ls.append(">");
 
 
-        for(Calls a : call_in_prog)ls+=a.getFrom()+"               "+a.getTo()+"               "+ a.getEnd()+"#";
+        for (Calls a : call_in_prog)
+            ls.append(a.getFrom()).append("               ").append(a.getTo()).append("               ").append(a.getEnd()).append("#");
 
-        to_send.add(ls);      //// right down
+        to_send.add(ls.toString());      //// right down
     }
 
 }
